@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Servicios", "ControlObjetosPerdidos.Servicios\ControlObjetosPerdidos.Servicios.csproj", "{AFB70F8F-92CA-460D-BB23-762A6E5176DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Data", "ControlObjetosPerdidos.Data\ControlObjetosPerdidos.Data.csproj", "{6AD908BA-BD52-4351-A82E-A9B02CBDD958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Entidad", "ControlObjetosPerdidos.Entidad\ControlObjetosPerdidos.Entidad.csproj", "{71F0843C-E9E6-4B11-94AC-64029463125F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Utilidades", "ControlObjetosPerdidos.Utilidades\ControlObjetosPerdidos.Utilidades.csproj", "{BA376B8E-49A1-4ACD-884B-7917DDEB9C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Logica", "ControlObjetosPerdidos.Logica\ControlObjetosPerdidos.Logica.csproj", "{6989CBC1-0C57-44CF-BF75-D78F2FF11715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB70F8F-92CA-460D-BB23-762A6E5176DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB70F8F-92CA-460D-BB23-762A6E5176DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB70F8F-92CA-460D-BB23-762A6E5176DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB70F8F-92CA-460D-BB23-762A6E5176DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD908BA-BD52-4351-A82E-A9B02CBDD958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD908BA-BD52-4351-A82E-A9B02CBDD958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD908BA-BD52-4351-A82E-A9B02CBDD958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD908BA-BD52-4351-A82E-A9B02CBDD958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F0843C-E9E6-4B11-94AC-64029463125F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F0843C-E9E6-4B11-94AC-64029463125F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F0843C-E9E6-4B11-94AC-64029463125F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F0843C-E9E6-4B11-94AC-64029463125F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA376B8E-49A1-4ACD-884B-7917DDEB9C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA376B8E-49A1-4ACD-884B-7917DDEB9C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA376B8E-49A1-4ACD-884B-7917DDEB9C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA376B8E-49A1-4ACD-884B-7917DDEB9C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {411CE02E-437C-4CD2-9DF9-84FCC0FB3268}
+	EndGlobalSection
+EndGlobal
