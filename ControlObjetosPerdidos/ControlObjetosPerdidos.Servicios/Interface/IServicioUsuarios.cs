@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ControlObjetosPerdidos.MensajeServicios.TiposComunes;
+using ControlObjetosPerdidos.MensajeServicios.Usuario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -12,6 +14,13 @@ namespace ControlObjetosPerdidos.Servicios.Interface
     public interface IServicioUsuarios
     {
         [OperationContract]
-        void DoWork();
+        RespuestaServicio InsertarUsuario(PeticionUsuario peticionUsuario);
+
+        [OperationContract]
+        RespuestaServicio ActualizarRol(PeticionUsuario peticionUsuario);
+
+        [OperationContract]
+        RespuestaServicio ActualizarEstado(PeticionUsuario peticionUsuario);
+
     }
 }

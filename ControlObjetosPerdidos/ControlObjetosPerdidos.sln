@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Logica", "ControlObjetosPerdidos.Logica\ControlObjetosPerdidos.Logica.csproj", "{6989CBC1-0C57-44CF-BF75-D78F2FF11715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.MensajeServicios", "ControlObjetosPerdidos.MensajeServicios\ControlObjetosPerdidos.MensajeServicios.csproj", "{A7F33A5F-AAA9-41F8-BC19-1A0248298677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Validaciones", "ControlObjetosPerdidos.Validaciones\ControlObjetosPerdidos.Validaciones.csproj", "{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6989CBC1-0C57-44CF-BF75-D78F2FF11715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F33A5F-AAA9-41F8-BC19-1A0248298677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F33A5F-AAA9-41F8-BC19-1A0248298677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F33A5F-AAA9-41F8-BC19-1A0248298677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F33A5F-AAA9-41F8-BC19-1A0248298677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -83,7 +83,16 @@
       <DependentUpon>ServicioUsuarios.svc</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ControlObjetosPerdidos.Logica\ControlObjetosPerdidos.Logica.csproj">
+      <Project>{6989cbc1-0c57-44cf-bf75-d78f2ff11715}</Project>
+      <Name>ControlObjetosPerdidos.Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControlObjetosPerdidos.MensajeServicios\ControlObjetosPerdidos.MensajeServicios.csproj">
+      <Project>{a7f33a5f-aaa9-41f8-bc19-1a0248298677}</Project>
+      <Name>ControlObjetosPerdidos.MensajeServicios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

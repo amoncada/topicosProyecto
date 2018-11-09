@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseModel.cs" />
-    <Compile Include="UsuarioReposotorio.cs" />
+    <Compile Include="Conexion\DataBaseModel.cs" />
+    <Compile Include="Repositorio\UsuarioReposotorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

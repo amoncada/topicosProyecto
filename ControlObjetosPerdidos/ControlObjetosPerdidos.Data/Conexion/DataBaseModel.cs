@@ -1,4 +1,4 @@
-namespace ControlObjetosPerdidos.Data
+namespace ControlObjetosPerdidos.Data.Conexion
 {
     using System;
     using System.Data.Entity;

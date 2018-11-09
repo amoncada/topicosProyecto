@@ -30,6 +30,9 @@ namespace ControlObjetosPerdidos.Entidad
         [StringLength(10)]
         public string Telefono { get; set; }
 
+        [Required]
+        public int Estado { get; set; }
+
         public virtual TRolUsuario TRolUsuario { get; set; }
     }
 }

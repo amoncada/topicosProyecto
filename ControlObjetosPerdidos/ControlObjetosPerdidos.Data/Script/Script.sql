@@ -13,6 +13,7 @@ CREATE TABLE TUsuario
 	Nombre nvarchar(100) not null,
 	Apellidos nvarchar(100) not null,
 	Telefono nvarchar(10) not null,
+	Estado int not null,
 	Constraint FK_USUARIO_ROL Foreign Key (IdRolUsuario) references TRolUsuario (IdRolUsuario)
 );
 
