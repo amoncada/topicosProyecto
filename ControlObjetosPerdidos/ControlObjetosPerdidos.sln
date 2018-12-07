@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Mens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.Validaciones", "ControlObjetosPerdidos.Validaciones\ControlObjetosPerdidos.Validaciones.csproj", "{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlObjetosPerdidos.MVC", "ControlObjetosPerdidos.MVC\ControlObjetosPerdidos.MVC.csproj", "{899C500F-7F2C-4449-8E15-DDCAC3B7543D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE3A92D1-B819-42C3-A9EE-4AB9E5CD409D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899C500F-7F2C-4449-8E15-DDCAC3B7543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899C500F-7F2C-4449-8E15-DDCAC3B7543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899C500F-7F2C-4449-8E15-DDCAC3B7543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899C500F-7F2C-4449-8E15-DDCAC3B7543D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

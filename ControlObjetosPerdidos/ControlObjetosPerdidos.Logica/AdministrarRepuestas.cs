@@ -14,8 +14,11 @@ namespace ControlObjetosPerdidos.Logica
         {
             return new RespuestaServicio()
             {
-                Mensaje = StatusRespuesta.Success,
-                Descripcion = descripcion
+                Encabezado = new RespuestaServicioEncabezado()
+                {
+                    Mensaje = StatusRespuesta.Success,
+                    Descripcion = descripcion
+                }
             };
         }
 
@@ -23,8 +26,11 @@ namespace ControlObjetosPerdidos.Logica
         {
             return new RespuestaServicio()
             {
-                Mensaje = StatusRespuesta.Error,
-                Descripcion = descripcion
+                Encabezado = new RespuestaServicioEncabezado()
+                {
+                    Mensaje = StatusRespuesta.Error,
+                    Descripcion = descripcion
+                }
             };
         }
 
@@ -32,8 +38,11 @@ namespace ControlObjetosPerdidos.Logica
         {
             return new RespuestaServicio()
             {
-                Mensaje = StatusRespuesta.Warning,
-                Descripcion = descripcion
+                Encabezado = new RespuestaServicioEncabezado()
+                {
+                    Mensaje = StatusRespuesta.Warning,
+                    Descripcion = descripcion
+                }
             };
         }
         #endregion
