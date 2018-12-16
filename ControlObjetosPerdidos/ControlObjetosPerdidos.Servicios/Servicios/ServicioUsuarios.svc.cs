@@ -1,4 +1,6 @@
-﻿using ControlObjetosPerdidos.Servicios.Interface;
+﻿using ControlObjetosPerdidos.MensajeServicios.TiposComunes;
+using ControlObjetosPerdidos.MensajeServicios.Usuario;
+using ControlObjetosPerdidos.Servicios.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +14,23 @@ namespace ControlObjetosPerdidos.Logica.Servicios
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServicioUsuarios.svc or ServicioUsuarios.svc.cs at the Solution Explorer and start debugging.
     public class ServicioUsuarios : IServicioUsuarios
     {
+        public RespuestaServicio ActualizarEstado(PeticionUsuario peticionUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public RespuestaServicio ActualizarRol(PeticionUsuario peticionUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
         public void DoWork()
         {
+        }
+
+        public RespuestaServicio InsertarUsuario(PeticionUsuario peticionUsuario)
+        {
+            throw new NotImplementedException();
         }
     }
 }

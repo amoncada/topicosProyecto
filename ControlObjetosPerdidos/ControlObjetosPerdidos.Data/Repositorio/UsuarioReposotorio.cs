@@ -92,6 +92,22 @@ namespace ControlObjetosPerdidos.Data.Repositorio
             }
             return result;
         }
+
+        public List<TUsuario> BuscarUsuario(string busqueda)
+        {
+            List<TUsuario> result = new List<TUsuario>();
+            using (DataBaseModel context = new DataBaseModel())
+            {
+                var query = context.TUsuario.AsQueryable<TUsuario>();
+                query = query.Where(u => u.IdUsuario.Contains(busqueda));
+                query = query.Where(u => u.Nombre.Contains(busqueda));
+                query = query.Where(u => u.Apellidos.Contains(busqueda));
+                query = query.Where(u => u.Telefono.Contains(busqueda));
+
+            }
+            return result;
+        }
+
         #endregion
 
     }
