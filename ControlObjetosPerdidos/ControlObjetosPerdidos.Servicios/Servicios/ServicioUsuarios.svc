@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="ControlObjetosPerdidos.Logica.ServicioUsuarios" CodeBehind="ServicioUsuarios.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ControlObjetosPerdidos.Servicios.Servicios.ServicioUsuarios" CodeBehind="ServicioUsuarios.svc.cs" %>

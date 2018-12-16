@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ControlObjetosPerdidos.MensajeServicios.TiposComunes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ControlObjetosPerdidos.MensajeServicios.TiposComunes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52584/Servicios/ServicioUsuarios.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="RespuestaServicio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Encabezado" nillable="true" type="tns:RespuestaServicioEncabezado" />
+      <xs:element minOccurs="0" name="Contenido" nillable="true" type="tns:RespuestaServicioContenido">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicio" nillable="true" type="tns:RespuestaServicio" />
+  <xs:complexType name="RespuestaServicioEncabezado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Mensaje" type="tns:StatusRespuesta" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaServicioEncabezado" nillable="true" type="tns:RespuestaServicioEncabezado" />
+  <xs:simpleType name="StatusRespuesta">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Warning">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Success">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatusRespuesta" nillable="true" type="tns:StatusRespuesta" />
+  <xs:complexType name="RespuestaServicioContenido">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="RespuestaServicioContenido" nillable="true" type="tns:RespuestaServicioContenido" />
+</xs:schema>

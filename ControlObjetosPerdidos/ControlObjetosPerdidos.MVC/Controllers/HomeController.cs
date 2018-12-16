@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControlObjetos.MVC.UserService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,10 @@ namespace ControlObjetos.MVC.Controllers
     {
         public ActionResult Index()
         {
+            ServicioUsuariosClient servicioUsuariosClient = new ServicioUsuariosClient();
+
+            var result = servicioUsuariosClient.EchoTest("Prueba");
+
             return View();
         }
 

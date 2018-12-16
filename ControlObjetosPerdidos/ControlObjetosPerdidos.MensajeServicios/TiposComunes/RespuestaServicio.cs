@@ -30,6 +30,6 @@ namespace ControlObjetosPerdidos.MensajeServicios.TiposComunes
     [DataContract]
     public class RespuestaServicioContenido
     {
-
+        
     }
 }

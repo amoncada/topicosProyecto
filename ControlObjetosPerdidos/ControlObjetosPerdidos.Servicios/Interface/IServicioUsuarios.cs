@@ -22,5 +22,8 @@ namespace ControlObjetosPerdidos.Servicios.Interface
         [OperationContract]
         RespuestaServicio ActualizarEstado(PeticionUsuario peticionUsuario);
 
+        [OperationContract]
+        RespuestaServicio EchoTest(string prueba);
+
     }
 }
