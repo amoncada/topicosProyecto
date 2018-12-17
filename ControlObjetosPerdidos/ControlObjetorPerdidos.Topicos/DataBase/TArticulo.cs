@@ -32,7 +32,6 @@ namespace ControlObjetorPerdidos.Topicos.DataBase
         [StringLength(100)]
         public string Descripcion { get; set; }
 
-        [Required]
         [StringLength(100)]
         public string Email { get; set; }
 
@@ -41,5 +40,7 @@ namespace ControlObjetorPerdidos.Topicos.DataBase
         public string Estado { get; set; }
 
         public virtual TSubCategoria TSubCategoria { get; set; }
+
+        public virtual TContacto TContacto { get; set; }
     }
 }

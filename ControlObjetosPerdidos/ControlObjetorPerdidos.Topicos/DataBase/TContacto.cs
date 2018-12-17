@@ -9,6 +9,12 @@ namespace ControlObjetorPerdidos.Topicos.DataBase
     [Table("TContacto")]
     public partial class TContacto
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public TContacto()
+        {
+            TArticulo = new HashSet<TArticulo>();
+        }
+
         [Key]
         [StringLength(100)]
         public string Email { get; set; }
@@ -26,5 +32,8 @@ namespace ControlObjetorPerdidos.Topicos.DataBase
 
         [StringLength(100)]
         public string Telefono { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TArticulo> TArticulo { get; set; }
     }
 }
