@@ -78,6 +78,12 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IdArticulo }) |
+    @if (Session["UserRol"] != null)
+    {
+        if (Session["UserRol"].Equals("administrador") || Session["UserRol"].Equals("Administrador") || Session["UserRol"].Equals("Admin"))
+        {
+            @Html.ActionLink("Edit", "Edit", new { id = Model.IdArticulo }) <p>|</p>
+        }
+    }
     @Html.ActionLink("Back to List", "Index")
 </p>

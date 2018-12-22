@@ -66,9 +66,16 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdArticulo }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdArticulo }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdArticulo })
+
+            @Html.ActionLink("Details", "Details", new { id = item.IdArticulo }) |
+            @if (Session["UserRol"] != null)
+            {
+                if (Session["UserRol"].Equals("administrador") || Session["UserRol"].Equals("Administrador") || Session["UserRol"].Equals("Admin"))
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IdArticulo }) <p>|</p>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IdArticulo })
+                }
+            }
         </td>
     </tr>
 }

@@ -17,23 +17,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Control de Objetos perdidos", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @if (Session["UserRol"] != null)
+                    {
+                        if (Session["UserRol"].Equals("administrador") || Session["UserRol"].Equals("Administrador") || Session["UserRol"].Equals("Admin"))
+                        {
+                            <li>@Html.ActionLink("Articulos", "Index", "TArticulos")</li>
+                            <li>@Html.ActionLink("Buscar Articulos", "BuscarArticulo", "TArticulos")</li>
+                            <li>@Html.ActionLink("Categorias", "Index", "TCategorias")</li>
+                            <li>@Html.ActionLink("Rol Usuario", "AdministrarContacto", "TContacto")</li>
+                        }
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Articulos", "Index", "TArticulos")</li>
+                        <li>@Html.ActionLink("Buscar Articulos", "BuscarArticulo", "TArticulos")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
-        </div>
+            </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Control de Objetos Perdidos</p>
         </footer>
     </div>
 

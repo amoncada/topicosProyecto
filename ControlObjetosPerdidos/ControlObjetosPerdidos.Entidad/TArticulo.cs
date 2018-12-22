@@ -1,4 +1,4 @@
-namespace ControlObjetosPerdidos.Entidad
+namespace ControlObjetorPerdidos.Entidad
 {
     using System;
     using System.Collections.Generic;
@@ -16,12 +16,32 @@ namespace ControlObjetosPerdidos.Entidad
 
         [Required]
         [StringLength(100)]
+        public string Marca { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Modelo { get; set; }
+
+        [Required]
+        [StringLength(6)]
+        public string Color { get; set; }
+
+        public DateTime FechaExtravio { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string Descripcion { get; set; }
+
+        [StringLength(100)]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(60)]
         public string Estado { get; set; }
 
         public virtual TSubCategoria TSubCategoria { get; set; }
+
+        public virtual TContacto TContacto { get; set; }
+        
     }
 }

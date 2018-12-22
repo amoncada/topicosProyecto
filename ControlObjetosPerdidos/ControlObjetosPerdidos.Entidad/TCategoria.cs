@@ -1,4 +1,4 @@
-namespace ControlObjetosPerdidos.Entidad
+namespace ControlObjetorPerdidos.Entidad
 {
     using System;
     using System.Collections.Generic;
@@ -19,10 +19,10 @@ namespace ControlObjetosPerdidos.Entidad
         public int IdCategoria { get; set; }
 
         [Required]
-        [StringLength(60)]
+        [StringLength(160)]
         public string Nombre { get; set; }
 
-        [StringLength(60)]
+        [StringLength(160)]
         public string Descripcion { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

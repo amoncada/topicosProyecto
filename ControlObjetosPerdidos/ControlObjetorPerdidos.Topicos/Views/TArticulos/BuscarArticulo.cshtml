@@ -1,0 +1,91 @@
+﻿@model IEnumerable<ControlObjetorPerdidos.Topicos.DataBase.TArticulo>
+
+@{
+    ViewBag.Title = "BuscarArticulo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+
+<p>
+
+    <br>
+    @Html.DropDownList("Colores", null, "Selecciona un Color", new { @id = "Colores" })
+    @Html.DropDownList("Categoria", null, "Selecciona una Categoria", new { @id = "Categorias" })
+    @Html.DropDownList("SubCategoria", null, "Selecciona una SubCategoria", new { @id = "SubCategorias" })
+    @Html.DropDownList("Estado", null, "Selecciona un Estado", new { @id = "Estado" })
+    <br>
+
+    <br>
+    @Html.TextBox("Descripcion", ViewBag.currentFilter as String, new { placeholder = "Descripcion", @id = "Nombre", @class = "form-control" })
+    <br>
+    @Html.TextBox("FechaInicial", ViewBag.currentFilter as String, new { @type = "date", @id = "FechaI", @class = "form-control" })
+    <br>
+    @Html.TextBox("FechaFinal", ViewBag.currentFilter as String, new { @type = "date",  @id = "FechaF", @class = "form-control"})
+    <br>
+ 
+
+    <input type="submit" value="Buscar" id="btnBuscar" class="btn-primary" />
+</p>
+}
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.IdSubCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaExtravio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TSubCategoria.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaExtravio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+        </tr>
+    }
+</table>
+

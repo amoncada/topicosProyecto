@@ -42,5 +42,8 @@ namespace ControlObjetorPerdidos.Topicos.DataBase
         public virtual TSubCategoria TSubCategoria { get; set; }
 
         public virtual TContacto TContacto { get; set; }
+
+        [NotMapped]
+        public Models.FileModel Files { get; set; }
     }
 }

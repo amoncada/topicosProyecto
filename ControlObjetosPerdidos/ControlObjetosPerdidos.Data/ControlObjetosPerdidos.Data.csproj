@@ -52,21 +52,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\DataBaseModel.cs" />
-    <Compile Include="Repositorio\UsuarioReposotorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\ArticuloRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Script\Script.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ControlObjetosPerdidos.Entidad\ControlObjetosPerdidos.Entidad.csproj">
       <Project>{71f0843c-e9e6-4b11-94ac-64029463125f}</Project>
       <Name>ControlObjetosPerdidos.Entidad</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Script\Script.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

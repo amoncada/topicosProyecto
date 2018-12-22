@@ -178,19 +178,27 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\TArticulosController.cs" />
+    <Compile Include="Controllers\TCategoriasController.cs" />
+    <Compile Include="Controllers\TContactoesController.cs" />
+    <Compile Include="Controllers\TSubCategoriasController.cs" />
     <Compile Include="DataBase\DataBaseModel.cs" />
+    <Compile Include="DataBase\Role.cs" />
     <Compile Include="DataBase\TArticulo.cs" />
     <Compile Include="DataBase\TArticuloImagen.cs" />
     <Compile Include="DataBase\TCategoria.cs" />
     <Compile Include="DataBase\TContacto.cs" />
+    <Compile Include="DataBase\TRegistros.cs" />
     <Compile Include="DataBase\TSubCategoria.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Photos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -199,6 +207,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\photos.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -216,6 +225,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\_photos.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -255,6 +265,31 @@
     <Content Include="Views\TArticulos\Details.cshtml" />
     <Content Include="Views\TArticulos\Edit.cshtml" />
     <Content Include="Views\TArticulos\Index.cshtml" />
+    <Content Include="Views\TArticulos\_Contacto.cshtml" />
+    <Content Include="Views\TArticulos\_Photo.cshtml" />
+    <Content Include="Views\TArticulos\FileUpload.cshtml" />
+    <Content Include="Views\TArticulos\_UploadPhotos.cshtml" />
+    <Content Include="Views\TCategorias\Create.cshtml" />
+    <Content Include="Views\TCategorias\Delete.cshtml" />
+    <Content Include="Views\TCategorias\Details.cshtml" />
+    <Content Include="Views\TCategorias\Edit.cshtml" />
+    <Content Include="Views\TCategorias\Index.cshtml" />
+    <Content Include="Views\TSubCategorias\Create.cshtml" />
+    <Content Include="Views\TSubCategorias\Delete.cshtml" />
+    <Content Include="Views\TSubCategorias\Details.cshtml" />
+    <Content Include="Views\TSubCategorias\Edit.cshtml" />
+    <Content Include="Views\TSubCategorias\Index.cshtml" />
+    <Content Include="Views\TContacto\Create.cshtml" />
+    <Content Include="Views\TContacto\Delete.cshtml" />
+    <Content Include="Views\TContacto\Details.cshtml" />
+    <Content Include="Views\TContacto\Edit.cshtml" />
+    <Content Include="Views\TContacto\Index.cshtml" />
+    <Content Include="EmailTemplate\Text.cshtml" />
+    <Content Include="Views\Register\AfterLogin.cshtml" />
+    <Content Include="Views\Register\Confirm.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\TArticulos\BuscarArticulo.cshtml" />
+    <Content Include="Views\TContacto\AdministrarContacto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -49,12 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="TArticulo.cs" />
+    <Compile Include="TArticuloImagen.cs" />
     <Compile Include="TCategoria.cs" />
-    <Compile Include="TReporteArticuloPerdido.cs" />
-    <Compile Include="TRolUsuario.cs" />
+    <Compile Include="TContacto.cs" />
+    <Compile Include="TRegistros.cs" />
     <Compile Include="TSubCategoria.cs" />
-    <Compile Include="TUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

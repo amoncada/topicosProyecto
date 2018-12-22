@@ -63,6 +63,16 @@ namespace ControlObjetorPerdidos.Topicos
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+
+            app.UseFacebookAuthentication(
+               appId: "281702815878372",
+               appSecret: "f9fce3153b4c62305793b3fd921f2e42");
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "850690635180-vr36c9js8h5ft3fcvm5ejs9cjtnfhcgd.apps.googleusercontent.com",
+                ClientSecret = "m6yY0MST8MiK2DeiluLKiD-t"
+            });
         }
     }
 }

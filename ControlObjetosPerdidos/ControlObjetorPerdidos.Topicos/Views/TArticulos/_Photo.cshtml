@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ControlObjetorPerdidos.Topicos.DataBase.TArticuloImagen>
+@{ ViewBag.Title = "Gallery"; }
+<link href="~/Content/photos.css" rel="stylesheet" />
+<script src="~/Scripts/_photos.js"></script>
+<div class="row-fluid">
+    <div class="span2">
+        <div>
+            @foreach (var image in Model)
+            {
+            <div class="photo-div">
+                <img src="data:image/png;base64,@image.HexImagen" alt="Base 64 encoded!" class="photo" onclick="display(this);"/>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+<div id="divimage" class="modal">
+    <img class="modal-content" id="modalimg">
+    <div id="caption"></div>
+</div>
